@@ -1,0 +1,34 @@
+
+.faq-section {
+  margin-bottom: $unit-huge;
+
+  .section-title {
+    text-align: center;
+    padding-bottom: $unit-large;
+    border-bottom: 1px solid #eee;
+    color: $primary-color;
+  }
+
+}
+
+.question {
+  padding: $unit-large 0;
+  border-bottom: 1px solid #eee;
+}
+
+.toggle-faq {
+  color: $primary-color;
+  margin-bottom: $unit;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  color: $secondary-color;
+  //margin-bottom: $unit;
+  transition: all .2s;
+}
+
+.toggle-faq.active + .faq-answer {
+  display: block;
+}

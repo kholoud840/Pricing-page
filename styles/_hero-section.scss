@@ -1,0 +1,90 @@
+
+.hero-section {
+  text-align: center;
+  min-height: 300px;
+  background: linear-gradient(to right, #e4a147, #64a5b6);
+  background-size: 100% 100%;
+
+  @media (min-width: $medium) {
+    min-height: 500px;
+  }
+}
+
+header {
+  padding: $unit 0;
+  @media (min-width: $medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.links-wrapper {
+  @media (min-width: $medium) {
+    display: flex;
+  }
+}
+
+.navigation {
+
+  @media (min-width: $medium) {
+    margin-right: -$unit;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-right: $unit;
+
+    a {
+      display: inline-block;
+      padding: $unit-small;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+  .nav-item.search {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+}
+
+.actions {
+  display: none;
+
+  @media (min-width: $medium) {
+    display: block;
+
+    a {
+      display: inline-block;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: $unit-small $unit-large;
+      margin-right: $unit;
+      text-transform: uppercase;
+    }
+
+    a.sign-up {
+      color: #e4a147;
+      background: #fff;
+    }
+  }
+}
+
+.hero-content {
+  margin-top: 50px;
+
+  @media (min-width: $medium) {
+    margin-top: 15%;
+  }
+
+  .hero-title {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+
+    @media (min-width: $medium) {
+      font-size: 3em;
+    }
+
+  }
+}
